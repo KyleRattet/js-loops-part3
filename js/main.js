@@ -85,19 +85,28 @@ $(document).on('ready', function() {
 // Testing filter() on problem 3&4
 
 //PROBLEM 3
-function city (value) {
- if (value.city === "Boulder"){
-  console.log(value.name +" is from "+ value.city);
- }
+// function city (value) {
+//  if (value.city === "Boulder"){
+//   console.log(value.name +" is from "+ value.city);
+//  }
+// }
+
+// var cityFilter = students.filter(city);
+
+
+
+//PROBLEM 4
+function olderThan (value) {
+  if (value.age > 25) {
+    console.log(value.name +" is older than 25");
+  }
 }
 
-var cityFilter = students.filter(city);
+var ageFilter = students.filter(olderThan);
+
+
 
 });
-
-
-
-
 
 
 
