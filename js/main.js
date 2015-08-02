@@ -51,15 +51,25 @@ $(document).on('ready', function() {
 // nameLoop(students);
 
 //PROBLEM 2 (PRINT NAME, CITY)
-function printNameCity (arr) {
-  arr.forEach(function (person) {
-    console.log(person.name +", " + person.city);
-  });
- }
+// function printNameCity (arr) {
+//   arr.forEach(function (person) {
+//     console.log(person.name +", " + person.city);
+//   });
+//  }
 
 
-printNameCity(students);
+// printNameCity(students);
 
+//PROBLEM 3 (FILTER CITY BOULDER, print names)
+function printBoulder (arr) {
+    arr.forEach(function (person) {
+      if(person.city === "Boulder"){
+        console.log(person.name +' is from ' + person.city);
+      }
+    });
+}
+
+printBoulder(students);
 
 });
 
