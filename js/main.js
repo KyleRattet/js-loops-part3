@@ -42,13 +42,24 @@ $(document).on('ready', function() {
 // firstLoop(students);
 
 //PROBLEM 1 (PRINT OUT AGES)
-function nameLoop (arr) {
-  arr.forEach(function (person) {
-    console.log(person.age);
-  });
-}
+// function nameLoop (arr) {
+//   arr.forEach(function (person) {
+//     console.log(person.age);
+//   });
+// }
 
-nameLoop(students);
+// nameLoop(students);
+
+//PROBLEM 2 (PRINT NAME, CITY)
+function printNameCity (arr) {
+  arr.forEach(function (person) {
+    console.log(person.name +", " + person.city);
+  });
+ }
+
+
+printNameCity(students);
+
 
 });
 
