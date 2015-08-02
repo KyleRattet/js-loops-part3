@@ -61,15 +61,26 @@ $(document).on('ready', function() {
 // printNameCity(students);
 
 //PROBLEM 3 (FILTER CITY BOULDER, print names)
-function printBoulder (arr) {
-    arr.forEach(function (person) {
-      if(person.city === "Boulder"){
-        console.log(person.name +' is from ' + person.city);
-      }
-    });
+// function printBoulder (arr) {
+//     arr.forEach(function (person) {
+//       if(person.city === "Boulder"){
+//         console.log(person.name +' is from ' + person.city);
+//       }
+//     });
+// }
+
+// printBoulder(students);
+
+//PROBLEM 4
+function olderThan (arr) {
+  arr.forEach(function (person) {
+    if(person.age > 25) {
+      console.log(person.name +' is older than 25');
+    }
+  });
 }
 
-printBoulder(students);
+olderThan(students);
 
 });
 
